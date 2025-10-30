@@ -66,6 +66,10 @@ def createTables():
 
         conn.commit()
 
+@app.route("/api/alive", methods=["GET"])
+def apiAlive():
+    return "<p>Alive</p>"
+
 @app.route("/api/reg", methods=["POST"])
 
 def registerUsers():
