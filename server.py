@@ -68,7 +68,7 @@ def createTables():
 
 @app.route("/api/alive", methods=["GET"])
 def apiAlive():
-    return "<p>Alive</p>"
+    return "<h1>Alive</h1>"
 
 @app.route("/api/reg", methods=["POST"])
 
