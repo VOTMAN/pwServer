@@ -1,9 +1,9 @@
 services:
   pwserver:
     build: .
+    image: votmann/pwserver:latest
     ports:
-      - "8000:8000"
+      - "8500:8500"
     env_file:
       - .env
     restart: unless-stopped
-  
